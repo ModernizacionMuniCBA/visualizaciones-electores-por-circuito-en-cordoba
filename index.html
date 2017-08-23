@@ -53,7 +53,7 @@
 
   const visualization = d3plus.viz()
     .container("#viz")
-    .data("datos/electores_2017.tsv")
+    .data("electores.tsv")
     .type("tree_map")
     .id(["Nombre Seccion", "Nombre Circuito"])
     .size("Electores 2017")
@@ -71,7 +71,7 @@
     console.log(boton);
     boton.classList.add('activo');
 
-    visualization.data(`datos/electores_${anio}.tsv`)
+    visualization
         .size(`Electores ${anio}`)
         .draw();
   }
