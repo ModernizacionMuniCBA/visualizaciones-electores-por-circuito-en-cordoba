@@ -51,6 +51,10 @@
   const viz = document.getElementById('viz');
   const botones = document.getElementsByTagName('button');
 
+  const formatoNumeros = (numero, key) => {
+    return Math.round(numero) !== numero ? numero.toFixed(2) + "%" : numero.toLocaleString('es-AR');
+  };
+
   const visualization = d3plus.viz()
     .container("#viz")
     .data("electores.tsv")
@@ -58,6 +62,7 @@
     .id(["Nombre Seccion", "Nombre Circuito"])
     .size("Electores 2017")
     .format("es_ES")
+    .format({ "number" : formatoNumeros})
     .draw();
 
   const limpiarClases = () => {
@@ -68,11 +73,11 @@
 
   const cargar = (boton, anio) => {
     limpiarClases();
-    console.log(boton);
     boton.classList.add('activo');
 
     visualization
         .size(`Electores ${anio}`)
+        .format({ "number" : formatoNumeros})
         .draw();
   }
 </script>
