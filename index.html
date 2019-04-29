@@ -41,7 +41,8 @@
   <button onClick="cargar(this,2011)">2011</button>
   <button onClick="cargar(this,2013)">2013</button>
   <button onClick="cargar(this,2015)">2015</button>
-  <button class="activo" onClick="cargar(this,2017)">2017</button>
+  <button onClick="cargar(this,2017)">2017</button>
+  <button class="activo" onClick="cargar(this,2019)">2019</button>
 </nav>
 <div id="viz"></div>
 
@@ -60,7 +61,7 @@
     .data("electores.tsv")
     .type("tree_map")
     .id(["Nombre Seccion", "Nombre Circuito"])
-    .size("Electores 2017")
+    .size("Electores 2019")
     .format("es_ES")
     .format({ "number" : formatoNumeros})
     .draw();
@@ -84,6 +85,3 @@
 
 </body>
 </html>
-
-
-
