@@ -5,6 +5,10 @@ Desarrollada en base a la recopilación de [datos sobre el histórico de elector
 
 ![electores](img/electores.png)
 
-Esta visualización permite conocer la distribución de los electores de Córdoba dentro de cada uno de los 26 departamentos de Córdoba.  
+Esta visualización permite conocer la distribución de los electores de Córdoba dentro de cada uno de los 26 departamentos de Córdoba.
+
+## ATENCION
+
+Algunas Cartas Marinas son nacionales e incluyen electores de 16 años, otras son provinciales y solo incluyen electores de más de 18 años.  
 
 
